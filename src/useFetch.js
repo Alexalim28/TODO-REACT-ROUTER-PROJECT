@@ -39,7 +39,6 @@ function useFetch(url) {
     setTimeout(() => {
       fetchData();
     }, 1000);
-
     return () => controller.abort();
   }, [url, fetchData, controller]);
 
